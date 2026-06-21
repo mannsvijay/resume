@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author :  Manan Vijay
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\vcenter{\hbox{\tiny$\bullet$}}$]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Manan Vijay} \\ \vspace{3pt}
+    \small
+    +91 9602243295 $|$
+    \href{mailto:mananvijay13@gmail.com}{\underline{mananvijay13@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/mannsvijay/}{\underline{linkedin.com/in/mannsvijay}} $|$
+    \href{https://github.com/mannsvijay}{\underline{github.com/mannsvijay}} $|$
+    \href{https://portfolio-mannsvijays-projects.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Electronics \& Communication Engineering}{2023 --  2027}
+      {JECRC Foundation (Rajasthan Technical University) $|$ CGPA: 7.8/10}{Jaipur, Rajasthan}
+  \resumeSubHeadingListEnd
+
+
+
+  \section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Java, JavaScript, TypeScript} \\
+     \textbf{Frontend}{: React.js, Next.js, Redux, HTML, CSS, Tailwind CSS} \\
+     \textbf{Backend}{: Node.js, Express.js, Spring Boot, REST APIs, JWT Authentication} \\
+     \textbf{Databases}{: MongoDB, MySQL, PostgreSQL, H2 Database} \\
+     \textbf{Tools \& Platforms}{: Git, GitHub, Postman, Vercel, Kafka} \\
+     \textbf{Core Concepts}{: Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks} \\
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{InstaVEG} $|$ \emph{React.js, TypeScript, Node.js, Express.js, PostgreSQL, Drizzle ORM}}{\href{https://green-mart-connect--mnvj69.replit.app/}{\underline{Live}}}
+\resumeItemListStart
+\resumeItem{Engineered a full-stack web application supporting 3 user roles (Buyer, Seller, Admin) with JWT authentication, RBAC, and secure session management.}
+\resumeItem{Developed scalable RESTful APIs using Node.js, Express.js, and PostgreSQL with OpenAPI-first architecture, Drizzle ORM, and Zod schema validation.}
+\resumeItem{Integrated Razorpay payment gateway, multi-vendor cart, real-time order tracking, and seller analytics dashboard using React.js, TanStack Query, and Tailwind CSS.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Appointy} $|$ \emph{React.js, Node.js, Express.js, MongoDB, JWT, Razorpay}}{\href{https://appointy-roan.vercel.app/}{\underline{Live}}}
+\resumeItemListStart
+\resumeItem{Built a full-stack healthcare appointment platform with specialty-based doctor discovery, role-specific dashboards, and secure multi-role authentication (Patient, Doctor, Admin).}
+\resumeItem{Designed MongoDB schemas for doctors, patients, appointments, and transactions enabling complex scheduling queries and real-time availability management.}
+\resumeItem{Integrated Razorpay with multiple payment modes, implementing end-to-end booking confirmation, appointment lifecycle management, and admin analytics with full CRUD.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Engineering Virtual Experience}{Remote}
+  {JPMorgan Chase \& Co. $|$ Forage}{2025}
+  \resumeItemListStart
+\resumeItem{Completed backend engineering tasks using Java, Spring Boot, and Apache Kafka for async transaction processing in a simulated enterprise environment.}
+\resumeItem{Implemented JPA entities, repositories, and RESTful APIs for balance update logic and external incentive integration using H2 SQL database.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Freelance Full Stack Developer}{Remote}
+  {Self-Employed}{2023 -- Present}
+  \resumeItemListStart
+    \resumeItem{Designed and delivered responsive full-stack web applications for multiple clients using React.js, Node.js, Express.js, and RESTful APIs.}
+    \resumeItem{Built scalable frontend interfaces, integrated third-party backend services, and optimized UI/UX across diverse client projects.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{Achievements}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.15in, label=$\vcenter{\hbox{\tiny$\bullet$}}$, itemsep=-3pt, topsep=0pt]
+  \small{
+ \item{Solved 700+ problems on LeetCode, achieved a 1700+ contest rating, and earned the 365 Days Badge. \hfill \href{https://leetcode.com/u/mannsvijay/}{\underline{Leetcode}}}
+  
+  \item{Secured Global Rank 198 in LeetCode Biweekly Contest 174 and Global Rank 1576 in LeetCode Biweekly Contest 175 among thousands of participants worldwide.}
+  
+  \item{Finalist at Smart India Hackathon (SIH) and participant in multiple national-level hackathons.}
+  
+  \item{Invited as Guest Speaker at JECRC University for ``Protocraft'' -- a Figma and UI/UX Design Workshop organized by DevCrest JU.}
+  
+  \item{Co-founded Flickies, a Jaipur-based streetwear brand, leading branding, creative design, and digital presence.}
+  
+  \item{Oracle Cloud Infrastructure Generative AI Professional $|$  Deloitte Data Analytics Job Simulation (Forage).}
+  }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
+
