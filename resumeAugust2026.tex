@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author :  Manan Vijay
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.72in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\vcenter{\hbox{\tiny$\bullet$}}$]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Manan Vijay} \\ \vspace{3pt}
+    \small
+    +91 9602243295 $|$
+    \href{mailto:mananvijay13@gmail.com}{\underline{mananvijay13@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/mannsvijay/}{\underline{linkedin.com/in/mannsvijay}} $|$
+    \href{https://github.com/mannsvijay}{\underline{github.com/mannsvijay}} $|$
+    \href{https://portfolio-mannsvijays-projects.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+\section{Professional  Summary}
+\small{
+Full-Stack Engineer focused on secure, scalable backend systems -- React.js, Node.js, Spring Boot, PostgreSQL, Docker, and CI/CD. Architected multi-role, production-grade platforms with RBAC and payment infrastructure, including a self-directed security audit that closed authorization vulnerabilities pre-launch. 1000+ DSA problems solved (800+ on LeetCode), 1700+ contest rating, Smart India Hackathon Finalist.
+}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Electronics \& Communication Engineering}{2023 --  2027}
+      {JECRC Foundation (Rajasthan Technical University) $|$ CGPA: 7.8/10}{Jaipur, Rajasthan}
+  \resumeSubHeadingListEnd
+
+
+
+  \section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Java, JavaScript} \\
+     \textbf{Frontend}{: React.js, Next.js, Redux, HTML, CSS, Tailwind CSS} \\
+     \textbf{Backend}{: Node.js, Express.js, REST APIs, JWT Authentication} \\
+     \textbf{Databases}{: MongoDB, MySQL, PostgreSQL, H2 Database} \\
+     \textbf{DevOps \& Tools}{: Docker, CI/CD Pipelines, Git, GitHub, Postman, Vercel} \\
+     \textbf{Core Concepts}{: Data Structures \& Algorithms, OOP, DBMS, Operating Systems} \\
+     \textbf{Soft Skills}{: Problem Solving, Self-Learning, Team Collaboration, Adaptability} \\
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{InstaVEG} $|$ \emph{React.js, TypeScript, Node.js, PostgreSQL, Drizzle ORM}}{\href{https://green-mart-connect--mnvj69.replit.app/}{\underline{Live}}}
+\resumeItemListStart
+\resumeItem{Architected a role-based marketplace (Buyer, Seller, Admin) with JWT authentication and RBAC; ran a self-directed security audit that identified and patched BOLA/IDOR authorization flaws before deployment.}
+\resumeItem{Built a type-safe REST API layer (Node.js, Express.js, PostgreSQL, Drizzle ORM) with OpenAPI-first contracts and Zod validation, preventing malformed data from reaching the database.}
+\resumeItem{Shipped real-time order tracking, seller analytics, and Razorpay payments (React.js, TanStack Query); containerized the stack with Docker for reproducible dev/prod environments.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Appointy} $|$ \emph{React.js, Node.js, Express.js, MongoDB, Razorpay}}{\href{https://appointy-roan.vercel.app/}{\underline{Live}}}
+\resumeItemListStart
+\resumeItem{Designed a multi-role appointment platform (Patient, Doctor, Admin) with specialty-based discovery, modeling MongoDB schemas for real-time availability under concurrent booking load.}
+\resumeItem{Found and fixed a race condition allowing double-booked slots, adding concurrency-safe write logic to guarantee scheduling consistency under simultaneous requests.}
+\resumeItem{Integrated Razorpay across multiple payment modes with full booking-lifecycle management; Dockerized services for consistent local and production deployment.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Engineering Virtual Experience}{Remote}
+  {JPMorgan Chase \& Co. $|$ Forage}{2025}
+  \resumeItemListStart
+\resumeItem{Completed backend engineering tasks using Java, Spring Boot, and Apache Kafka for async transaction processing in a simulated enterprise environment.}
+\resumeItem{Implemented JPA entities, repositories, and RESTful APIs for balance update logic and external incentive integration using H2 SQL database.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Freelance Full Stack Developer}{Remote}
+  {Self-Employed}{May 2024 -- June 2026}
+  \resumeItemListStart
+    \resumeItem{Owned 15+ full-stack apps end-to-end for independent clients -- requirements, architecture, deployment -- as sole engineer on each engagement (React.js, Node.js, Express.js, REST APIs).}
+    \resumeItem{Built JWT-authenticated REST APIs and responsive, production UIs (Tailwind CSS), working directly with clients to ship features on tight timelines.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{Achievements}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.15in, label=$\vcenter{\hbox{\tiny$\bullet$}}$, itemsep=-4pt, topsep=0pt]
+  \small{
+ \item{Solved 1000+ DSA problems across platforms (800+ on LeetCode), achieved a 1700+ contest rating, and earned the 500 Days Badge. \hfill \href{https://leetcode.com/u/mannsvijay/}{\underline{Leetcode}}}
+  
+  \item{Secured Global Rank 198 in LeetCode Biweekly Contest 174 and Global Rank 1576 in LeetCode Biweekly Contest 175 among thousands of participants worldwide.}
+  
+  \item{Finalist at Smart India Hackathon (SIH) and participant in multiple national-level hackathons.}
+  
+  \item{Invited as Guest Speaker at JECRC University for ``Protocraft'' -- a Figma and UI/UX Design Workshop organized by DevCrest JU.}
+  
+  \item{Co-founded Flickies, a Jaipur-based streetwear brand, leading branding, creative design, and digital presence.}
+  
+  \item{Oracle Cloud Infrastructure Generative AI Professional $|$  Deloitte Data Analytics Job Simulation (Forage).}
+  }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
